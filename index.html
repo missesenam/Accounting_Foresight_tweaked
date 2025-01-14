@@ -9,12 +9,21 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              text: "#05050a",
+              background: "#f1f0fa",
+              primary: "#1a1565",
+              secondary: "#8a83eb",
+              accent: "#5146f0",
             },
           },
         },
@@ -22,25 +31,94 @@
     </script>
   </head>
   <body>
-    <nav class="w-[80%] mx-auto shadow-xl">
-      <div class="navbar bg-base-100">
-        <div class="flex-1">
-          <a
-            class="btn btn-ghost text-xl w-[100%] sm:w-auto px-0 hover:border-none"
-            ><img src="./Iogo/logo.jpg" alt="" class="h-full max-w-full"
-          /></a>
+    <nav class="z-[1000] fixed w-screen bg-background" id="navbar"></nav>
+    <main class="pt-24">
+      <section class="w-[80%] mx-auto">
+        <div class="flex items-center justify-between p-6">
+          <div class="w-1/2">
+            <img
+              src="img/ITsolutions.png"
+              alt="Descriptive Text"
+              class="rounded-lg w-full h-auto"
+            />
+          </div>
+          <div class="w-1/2 pl-6">
+            <h1
+              class="text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#1a1565] to-[#8a83eb] bg-clip-text text-transparent font-serif"
+            >
+              Welcome to
+            </h1>
+
+            <h1 class="text-5xl font-extrabold mb-6 text-gray-800 font-serif">
+              Foresight Consult Ltd
+            </h1>
+            <p class="text-lg text-gray-700 leading-relaxed font-light">
+              Foresight Consult Ltd offers tailored accounting and IT solutions
+              to clients across the UK and EMEA with a client-first approach.
+            </p>
+          </div>
         </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>about Us</a></li>
-            <li><a>our services</a></li>
-          </ul>
+
+        <div class="flex items-center justify-between p-6 mt-16 gap-8">
+          <div class="w-1/2 pl-6">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Our Expertise</h2>
+            <p class="text-lg text-text leading-relaxed">
+              At Foresight Consult Ltd, we specialize in delivering tailored
+              accounting and IT solutions to help businesses and individuals
+              achieve financial clarity and success in the UK and EMEA. With
+              years of experience and a client-first approach, we’re committed
+              to providing professional, reliable, and personalized services.
+            </p>
+          </div>
+
+          <div class="w-1/2">
+            <img
+              src="./img/Team in a Meeting.jpg"
+              alt="Foresight Consult Ltd"
+              class="rounded-lg w-full h-auto"
+            />
+          </div>
         </div>
-      </div>
-    </nav>
-    <main>
-      <h1>hello</h1>
+
+        <div
+          class="p-6 mt-8 rounded-lg text-center lg:w-[70%] mx-auto bg-white"
+        >
+          <h2 class="text-4xl font-bold mb-4">Mission</h2>
+          <p class="text-lg">
+            Offer financial guidance, exceptional customer service, and
+            innovative solutions for businesses to achieve their set goals. We
+            pride ourselves on building a long-term relationship with our
+            clients by providing them with the expertise and support necessary
+            to succeed.
+          </p>
+        </div>
+      </section>
+      <!-- section 2 -->
+      <section class="w-[90%] mx-auto mt-16">
+        <div class="lg:flex gap-6">
+          <div
+            class="lg:w-[40%] border rounded-lg bg-primary text-white lg:text-[80px] flex items-center justify-center"
+          >
+            <h1 class="transform lg:rotate-90 text-[130px] uppercase">
+              our services
+            </h1>
+          </div>
+
+          <!-- md:grid-cols-3 lg:grid-cols-4 -->
+          <div
+            id="services-container"
+            class="lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-6 p-4"
+          ></div>
+        </div>
+
+        <div
+          class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-10"
+          id="whychooseus"
+        ></div>
+      </section>
     </main>
+    <script src="script.js"></script>
+    <script src="ScriptFiles/services.js"></script>
+    <script src="ScriptFiles/whyus.js"></script>
   </body>
 </html>
