@@ -17,38 +17,14 @@ const services = [
       "Our IT professionals provide innovative solutions to reduce cost, improve efficiency and streamline financial processes.",
     icon: "fa-solid fa-laptop-code",
   },
-  {
-    title: "Business Consultancy",
-    description:
-      "We offer business advice underpinned by strategic growth to clients thereby helping them to mitigate risks, and identify opportunities to achieve their goals.",
-    icon: "fa-solid fa-chalkboard-teacher",
-  },
-  {
-    title: "Auditing & Assurance",
-    description:
-      "Ensure accuracy and transparency in financial reports with our thorough auditing services.",
-    icon: "fa-solid fa-search",
-  },
-  {
-    title: "Tax Preparation & Planning",
-    description:
-      "Maximize tax savings and staying compliant with our meticulous tax preparation and strategic planning expertise.",
-    icon: "fa-solid fa-file-invoice-dollar",
-  },
-  {
-    title: "Payroll Services",
-    description:
-      "Simplify your payroll process with accurate and timely payroll management.",
-    icon: "fa-solid fa-users-cog",
-  },
 ];
 
-const container = document.getElementById("services-container");
+const container = document.getElementById("services-containerslice");
 
 services.forEach((service) => {
   const serviceCard = `
       <div class="rounded overflow-hidden shadow-lg mb-4">
-        <div class="bg-secondary p-2">
+        <div class="bg-accent p-2">
           <div class="p-2 rounded">
             <i class="fas ${service.icon} text-white"></i> 
           </div>
