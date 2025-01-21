@@ -3,22 +3,54 @@ const navbarElement = document.getElementById("navbar");
 
 // Set the innerHTML of the element
 navbarElement.innerHTML = `
-  <div class="navbar md:w-[80%] mx-auto bg-background">
+ <div class="navbar md:w-[80%] mx-auto bg-background relative">
+  <div class="flex items-center justify-between w-full">
+    <!-- Logo -->
     <div class="flex-1">
-      <a href="index.html" class=" text-xl w-[100%] sm:w-auto px-0">
-        <img src="./Iogo/Foresight.png" alt="" class="h-[40px]  max-w-full" />
+      <a href="index.html" class="text-xl w-[100%] sm:w-auto px-0">
+        <img src="./Iogo/Foresight.png" alt="Foresight Logo" class="h-[40px] max-w-full" />
       </a>
     </div>
-    <div class="flex-none">
+
+    <!-- Hamburger Icon -->
+    <div class="flex-none sm:hidden">
+      <button id="menu-toggle" class="p-2 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Items -->
+    <div id="menu" class="flex-none hidden sm:block opacity-70 backdrop-blur-3xl">
       <ul class="menu menu-horizontal px-1">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html"> Services</a></li>
-        <li><a href="contact.html"> Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full justify-end bg-background  backdrop-blur-lg  custom-backdrop z-10">
+    <ul class="menu p-2">
+      <li class="border-b border-accent "><a href="index.html">Home</a></li>
+      <li class="border-b border-accent"><a href="about.html">About</a></li>
+      <li class="border-b border-accent"><a href="services.html">Services</a></li>
+      <li class="border-b border-accent"><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
 `;
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
 // when src="./Iogo/Foresight.png"
 // class="h-full max-w-full
 const footerElement = document.getElementById("footer");
