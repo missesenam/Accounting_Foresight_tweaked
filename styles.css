@@ -3,4 +3,11 @@ body {
   font-family: serif;
   color: #05050a;
 }
-/* custom-backdrop */
+.custom-backdrop {
+  background-color: rgba(
+    241,
+    240,
+    250,
+    0.6
+  ); /* Semi-transparent overlay color */
+}
