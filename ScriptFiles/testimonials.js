@@ -1,19 +1,19 @@
 const testimonials = [
   {
     text: "Working with [Foresight Consult Ltd] has been a game-changer for our business. Their professionalism and expertise are unmatched.",
-    name: "Client Name",
+    name: "Eleanor Batel",
   },
   {
     text: "The team at [Foresight Consult Ltd] has simplified our finances and saved us significant time and money. Highly recommended!",
-    name: "Client Name",
+    name: "Liam Fraser",
   },
   {
     text: "Working with [Foresight Consult Ltd] has been a game-changer for our business. Their professionalism and expertise are unmatched.",
-    name: "Client Name",
+    name: "Ava Morales",
   },
   {
     text: "The team at [Foresight Consult Ltd] has simplified our finances and saved us significant time and money. Highly recommended!",
-    name: "Client Name",
+    name: "Sophie Reynolds",
   },
 ];
 
