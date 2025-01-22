@@ -33,7 +33,7 @@ navbarElement.innerHTML = `
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full justify-end bg-background  backdrop-blur-lg  custom-backdrop z-10">
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full justify-end backdrop-blur-lg  custom-backdrop z-10">
     <ul class="menu p-2">
       <li class="border-b border-accent "><a href="index.html">Home</a></li>
       <li class="border-b border-accent"><a href="about.html">About</a></li>
